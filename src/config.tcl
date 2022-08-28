@@ -2,7 +2,7 @@
 set script_dir [file dirname [file normalize [info script]]]
 
 # HACK: edited this, instead of relying on the Makefile to prep this for us
-set ::env(DESIGN_NAME) scan_wrapper_341154068332282450
+set ::env(DESIGN_NAME) scan_wrapper_341193419111006803
 
 # save some time
 set ::env(RUN_KLAYOUT_XOR) 0
@@ -15,8 +15,8 @@ set ::env(PL_RESIZER_BUFFER_OUTPUT_PORTS) 0
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 # HACK: explicitly specify which files we are using, ignore TB etc.
-set ::env(VERILOG_FILES) "$::env(DESIGN_DIR)/user_module_341154068332282450.v \
-$::env(DESIGN_DIR)/scan_wrapper_341154068332282450.v \
+set ::env(VERILOG_FILES) "$::env(DESIGN_DIR)/user_module_341193419111006803.v \
+$::env(DESIGN_DIR)/scan_wrapper_341193419111006803.v \
 $::env(DESIGN_DIR)/pdm.v"
 
 # absolute die size

@@ -9,7 +9,7 @@
 `endif
 */
 
-module scan_wrapper_341154068332282450 (
+module scan_wrapper_341193419111006803 (
     input wire clk_in,
     input wire data_in,
     input wire scan_select_in,
@@ -76,7 +76,7 @@ module scan_wrapper_341154068332282450 (
     `endif
 
     // instantiate the wokwi module
-    user_module_341154068332282450 user_module(
+    user_module_341193419111006803 user_module(
         .io_in     (module_data_in),
         .io_out    (module_data_out)
     );
