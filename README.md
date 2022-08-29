@@ -59,6 +59,31 @@ space is limited).
 // otherwise roll over to 0
 ```
 
+Execution trace:
+
+```
+$ make -C src -f test.mk | tail -50 | head -17
+        Running 0 (insn 0,  8)
+00500  pc 1 acc  8
+        Running 1 (insn 1,  4)
+00510  pc 2 acc  8
+        Running 2 (insn 2,  5)
+00520  pc 3 acc 13
+        Running 3 (insn 1,  0)
+00530  pc 4 acc 13
+        Running 4 (insn 0,  8)
+00540  pc 5 acc  8
+        Running 5 (insn 1,  2)
+00550  pc 6 acc  8
+        Running 6 (insn 2,  8)
+00560  pc 7 acc  0
+        Running 7 (insn 3,  7)
+        Running 7 (insn 3,  7)
+        Running 7 (insn 3,  7)
+```
+
+We actually computed fib all the way to 13 (largest that will fit in 4-bits).
+
 
 # Original README.md follows
 
