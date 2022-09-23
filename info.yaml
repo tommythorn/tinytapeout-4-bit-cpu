@@ -7,7 +7,7 @@
 # This will be automatically collected and used to make a datasheet for the chip.
 project: 
   author:       "Tommy Thorn"      # Your name
-  title:        "pdp0: 4-bit CPU in the style of PDP-1/TX-0"      # Project title
+  title:        "PDP-0: 4-bit CPU in the style of PDP-1/TX-0"      # Project title
   description:  "The tiny 4-bit CPU packs a 3b program counter, an accumulator, and 8 6b words."      # Short description of what your project does
   how_it_works: "The two top bits in each word form the opcode (load, store, add, branch-if-zero) while the remaining four are the immediate field that the opcode uses.  Load and store only access the immediate field of the word.  The IO implements a simple command protocol to reset, load data, load code, and run.  The output are used for the PC and the Accumulator.  The test bench shows how to load a fibonacci computing program."      # Longer description of how the project works
   how_to_test:  "Use the command protocol to load programs and run them (see test bench)"      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
