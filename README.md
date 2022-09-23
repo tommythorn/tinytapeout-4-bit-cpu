@@ -1,4 +1,4 @@
-# A PDP-8 Inspired 4-bit CPU
+# PDP-0, a PDP-1/TX-0 Inspired 4-bit CPU
 
 With ~ 200 gates and 8-inputs, 8-outputs, can we make a full CPU?  If
 we depend on external memory, we can do like the Intel 4004 and
